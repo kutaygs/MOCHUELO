@@ -17,12 +17,13 @@ def yesOrNo():
     return (raw_input("Devam et Y / N: ") in yes)
 
 mochuelologo = """
-.___  ___.   ______     ______  __    __   __    __   _______  __        ______
-|   \/   |  /  __  \   /      ||  |  |  | |  |  |  | |   ____||  |      /  __  |
-|  \  /  | |  |  |  | |  ,----'|  |__|  | |  |  |  | |  |__   |  |     |  |  |  |
-|  |\/|  | |  |  |  | |  |     |   __   | |  |  |  | |   __|  |  |     |  |  |  |
-|  |  |  | |  `--'  | |  `----.|  |  |  | |  `--'  | |  |____ |  `----.|  `--'  |
-|__|  |__|  \______/   \______||__|  |__|  \______/  |_______||_______| \______/
+
+.___  ___.   ______     ______  __    __   __    __  _______  __        ______
+|   \/   |  /  __  \   /      ||  |  |  | |  |  |  ||   ____||  |      /  __  |
+|  \  /  | |  |  |  | |  ,----'|  |__|  | |  |  |  ||  |__   |  |     |  |  |  |
+|  |\/|  | |  |  |  | |  |     |   __   | |  |  |  ||   __|  |  |     |  |  |  |
+|  |  |  | |  `--'  | |  `----.|  |  |  | |  `--'  ||  |____ |  `----.|  `--'  |
+|__|  |__|  \______/   \______||__|  |__|  \______/ |_______||_______| \______/
 
 
 """
@@ -55,6 +56,30 @@ class mochuelo:
 
 done = 'false'
 
+def Insta():
+    print("   Instagram kullanici adi:")
+    choice5 = raw_input("mochuelo~# ")
+    print (choice5) + (" Bot Basladi")
+    INSTAanimate()
+
+def dos():
+    print("   IP Adresi Girin")
+    choice6 = raw_input("mochuelo~# ")
+    print (choice6) + (" Saldiri Basladi")
+    DOSanimate()
+
+def polis():
+    print("   Bulundugunuz Sehiri Yazin")
+    choice7 = raw_input("mochuelo~# ")
+    print (choice7) + (" Icin Arama Baslatildi")
+    Panimate()
+
+def tel():
+    print("   Telefon Numarasi Girin")
+    choice8 = raw_input("mochuelo~# ")
+    print (choice8) + (" Icin Dinleme Baslatildi")
+    Panimate()
+
 def animate():
     while done == 'false':
         sys.stdout.write('\rYukleniyor, lutfen bekleyiniz... |')
@@ -68,6 +93,60 @@ def animate():
     sys.stdout.write('\r ')
 
 
+
+def DOSanimate():
+    while done == 'false':
+        sys.stdout.write('\rSaldiriyor... |')
+        time.sleep(0.1)
+        sys.stdout.write('\rSaldiriyor... /')
+        time.sleep(0.1)
+        sys.stdout.write('\rSaldiriyor... -')
+        time.sleep(0.1)
+        sys.stdout.write('\rSaldiriyor... \\')
+        time.sleep(0.1)
+    sys.stdout.write('\r ')
+
+
+def INSTAanimate():
+    while done == 'false':
+        sys.stdout.write('\rBot calisiyor... |')
+        time.sleep(0.1)
+        sys.stdout.write('\rBot calisiyor... /')
+        time.sleep(0.1)
+        sys.stdout.write('\rBot calisiyor... -')
+        time.sleep(0.1)
+        sys.stdout.write('\rBot calisiyor... \\')
+        time.sleep(0.1)
+    sys.stdout.write('\r ')
+
+
+def Panimate():
+    while done == 'false':
+        sys.stdout.write('\rPolis Telsizi Araniyor... |')
+        time.sleep(0.1)
+        sys.stdout.write('\rPolis Telsizi Araniyor... /')
+        time.sleep(0.1)
+        sys.stdout.write('\rPolis Telsizi Araniyor... -')
+        time.sleep(0.1)
+        sys.stdout.write('\rPolis Telsizi Araniyor... \\')
+        time.sleep(0.1)
+    sys.stdout.write('\r ')
+
+
+
+    def admin():
+        while done == 'false':
+            sys.stdout.write('\rAdmin sayfasi yukleniyor... |')
+            time.sleep(0.1)
+            sys.stdout.write('\rAdmin sayfasi yukleniyor... /')
+            time.sleep(0.1)
+            sys.stdout.write('\rAdmin sayfasi yukleniyor... -')
+            time.sleep(0.1)
+            sys.stdout.write('\rAdmin sayfasi yukleniyor... \\')
+            time.sleep(0.1)
+        sys.stdout.write('\r ')
+
+
 class wirelessTestingMenu:
     def __init__(self):
         print (mochuelologo)
@@ -79,11 +158,11 @@ class wirelessTestingMenu:
         print("   {9}-Ana Menuye Git\n")
         choice4 = raw_input("mochuelo~# ")
         if choice4 == "1":
-            animate()
+            polis()
         elif choice4 == "2":
-            animate()
+            dos()
         elif choice4 == "3":
-            animate()
+            Insta()
         elif choice4 == "4":
             animate()
         elif choice4 == "5":
@@ -91,7 +170,7 @@ class wirelessTestingMenu:
         elif choice4 == "9":
             animate()
         elif choice4 == "99":
-            animate()
+            admin()
         else:
             self.__init__()
         self.completed()
