@@ -78,7 +78,13 @@ def tel():
     print("   Telefon Numarasi Girin")
     choice8 = raw_input("mochuelo~# ")
     print (choice8) + (" Icin Dinleme Baslatildi")
-    Panimate()
+    TELanimate()
+
+def face():
+    print("   Facebook Mail Girin")
+    choice8 = raw_input("mochuelo~# ")
+    print (choice8) + (" Icin Bruteforca Baslatildi")
+    FACEanimate()
 
 def animate():
     while done == 'false':
@@ -133,6 +139,32 @@ def Panimate():
     sys.stdout.write('\r ')
 
 
+def TELanimate():
+    while done == 'false':
+        sys.stdout.write('\rTelefon Dinleniyor... |')
+        time.sleep(0.1)
+        sys.stdout.write('\rTelefon Dinleniyor... /')
+        time.sleep(0.1)
+        sys.stdout.write('\rTelefon Dinleniyor... -')
+        time.sleep(0.1)
+        sys.stdout.write('\rTelefon Dinleniyor... \\')
+        time.sleep(0.1)
+    sys.stdout.write('\r ')
+
+
+def FACEanimate():
+    while done == 'false':
+        sys.stdout.write('\rBruteforce Calisiyor... |')
+        time.sleep(0.1)
+        sys.stdout.write('\rBruteforce Calisiyor... /')
+        time.sleep(0.1)
+        sys.stdout.write('\rBruteforce Calisiyor... -')
+        time.sleep(0.1)
+        sys.stdout.write('\rBruteforce Calisiyor... \\')
+        time.sleep(0.1)
+    sys.stdout.write('\r ')
+
+
 
     def admin():
         while done == 'false':
@@ -164,9 +196,9 @@ class wirelessTestingMenu:
         elif choice4 == "3":
             Insta()
         elif choice4 == "4":
-            animate()
+            tel()
         elif choice4 == "5":
-            animate()
+            face()
         elif choice4 == "9":
             animate()
         elif choice4 == "99":
